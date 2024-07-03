@@ -1,0 +1,303 @@
+/* General Styles */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth !important;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+h2 {
+    font-size: 2.5em;
+    margin-bottom: 0.5em;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 1em 0;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    width: 100%;
+    transition: background-color 0.3s ease;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo h1 {
+    margin: 0;
+    font-size: 1.5em;
+}
+
+header nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1em;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0;
+}
+
+.nav-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+    color: #ff6347;
+}
+
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    height: 3px;
+    width: 25px;
+    background: #fff;
+    margin: 4px;
+    border-radius: 2px;
+    transition: transform 0.3s ease;
+}
+
+.hamburger.active span:nth-child(1) {
+    transform: translateY(7px) rotate(45deg);
+}
+
+.hamburger.active span:nth-child(2) {
+    opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+    transform: translateY(-7px) rotate(-45deg);
+}
+
+/* Section Styles */
+section {
+    padding: 2em 0;
+}
+
+#home {
+    background: #f4f4f4;
+    text-align: center;
+    padding-top: 100px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+#products .product-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+    justify-content: space-around;
+}
+
+.product-item {
+    width: 30%;
+    text-align: center;
+    transition: transform 0.3s ease;
+    background-color: rgb(233, 233, 233);
+    border-radius: 25px;
+    padding-top: 25px;
+    height: min-content;
+}
+
+.product-item:hover {
+    transform: scale(1.05);
+}
+
+.product-item img {
+    width: 87%;
+    height: 50vh !important;
+    object-fit: cover;
+    height: auto;
+    border-radius: 10px;
+}
+
+#about {
+    background: #fff;
+    padding: 2em 0;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+#about .about-content {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.about-text {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;
+}
+
+.about-text p {
+    margin-bottom: 1em;
+    color: #555;
+    line-height: 1.6;
+}
+
+.about-images {
+    flex: 1;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1em;
+    justify-content: center;
+}
+
+.about-images img {
+    width: 48%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#contact {
+    background: #f9f9f9;
+    padding: 2em 0;
+    text-align: center;
+    animation: fadeIn 1s ease-in-out;
+}
+
+#contact h2 {
+    margin-bottom: 0.5em;
+    font-size: 2em;
+}
+
+#contact p {
+    margin-bottom: 1.5em;
+    color: #666;
+}
+
+#contact .form-group {
+    margin-bottom: 1.5em;
+    text-align: left;
+}
+
+#contact label {
+    display: block;
+    margin-bottom: 0.5em;
+    font-weight: bold;
+}
+
+#contact input,
+#contact textarea {
+    width: 100%;
+    padding: 0.75em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1em;
+}
+
+#contact textarea {
+    height: 150px;
+    resize: vertical;
+}
+
+#contact button {
+    background-color: #333;
+    color: #fff;
+    padding: 0.75em 1.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    transition: background-color 0.3s ease;
+}
+
+#contact button:hover {
+    background-color: #555;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+    animation: fadeIn 1s ease-in-out;
+}
+
+.footer-links {
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    margin-bottom: 1em;
+}
+
+.footer-links a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.footer-links a:hover {
+    color: #ff6347;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .product-item {
+        width: 100%;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-images img {
+        width: 100%;
+    }
+}
+
+/* Keyframes for Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+*{
+    scroll-behavior: smooth;
+}

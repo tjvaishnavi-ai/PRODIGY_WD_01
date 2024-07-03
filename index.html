@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My E-Commerce Website</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <h1>MyShop</h1>
+            </div>
+            <nav>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section id="home">
+            <div class="container">
+                <h2>Welcome to MyShop</h2>
+                <p>Your one-stop shop for all your needs.</p>
+            </div>
+        </section>
+        <section id="products">
+            <div class="container">
+                <h2>Our Products</h2>
+                <div class="product-list">
+                    <div class="product-item">
+                        <img src="https://muselot.in/cdn/shop/products/Plain-t-shirts---Brown-plain-women_s-t-shirt---MUSELOT.jpg?v=1658090229" alt="Shirt">
+                        <h3>Shirt</h3>
+                        <p>$10.00</p>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSMfgpr0Xc0tqGFEugDOuIRc2XNfzJPV6Nm6w&s" alt="Melet swetter">
+                        <h3>Melet Sweeter</h3>
+                        <p>$20.00</p>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://m.media-amazon.com/images/I/711BWjVrpPL._AC_UY1100_.jpg" alt="Crop top">
+                        <h3>Crop top</h3>
+                        <p>$30.00</p>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://i0.wp.com/www.swaroopfashion.com/wp-content/uploads/2021/10/Koala-Grey-Floral-Embroidery-Kurti-With-Pant-Set-Zoom.jpeg?fit=1024%2C1280&ssl=1" alt="Bordered kurti">
+                        <h3>Bordered net kurti</h3>
+                        <p>$40.00</p>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://assets.ajio.com/medias/sys_master/root/20231018/C16c/652f0a30ddf7791519450000/-473Wx593H-466716990-teal-MODEL.jpg" alt="South indian special kanchu saree">
+                        <h3>South indian special kanchu saree</h3>
+                        <p>$50.00</p>
+                    </div>
+                    <div class="product-item">
+                        <img src="https://m.media-amazon.com/images/I/61MR4wuHzuL._AC_UY1100_.jpg" alt="Perfet bodycon dress">
+                        <h3>Perfect Bodycon</h3>
+                        <p>$60.00</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <div class="about-content">
+                    <div class="about-text">
+                        <p>Welcome to MyShop, your number one source for all things fashion. We're dedicated to giving
+                            you the very best of clothing, with a focus on quality, customer service, and uniqueness.
+                        </p>
+                        <p>Founded in 2020 by Jane Doe, MyShop has come a long way from its beginnings in a small home
+                            office. When Jane first started out, her passion for eco-friendly fashion drove her to do
+                            tons of research, so that MyShop can offer you competitive prices and high-quality products.
+                            We now serve customers all over the world and are thrilled that we're able to turn our
+                            passion into our own website.</p>
+                        <p>We hope you enjoy our products as much as we enjoy offering them to you. If you have any
+                            questions or comments, please don't hesitate to contact us.</p>
+                        <p>Sincerely, <br> Jane Doe, Founder</p>
+                    </div>
+                    <div class="about-images">
+                        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQoHPxq5OHGyFbEYyOOP9rGxbxwidF1H-lCLQ&s" alt="Our Team">
+                        <img src="https://thumbor.forbes.com/thumbor/fit-in/900x510/https://www.forbes.com/advisor/wp-content/uploads/2022/03/Image_-_How_to_start_a_clothing_business_.jpeg.jpg" alt="Our Office">
+                        <img src="https://img.freepik.com/free-photo/fashion-clothing-hangers-show_1153-5383.jpg?size=626&ext=jpg&ga=GA1.1.1413502914.1719964800&semt=ais_user" alt="Our Store">
+                        <img src="https://img.kwcdn.com/product/open/2023-11-16/1700158993163-bb6c351b825e4a48ae3a512b11228437-goods.jpeg?imageMogr2/auto-orient%7CimageView2/2/w/800/q/70/format/webp" alt="Our Products">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact">
+            <div class="container">
+                <h2>Contact Us</h2>
+                <p>We'd love to hear from you! Please fill out the form below to get in touch.</p>
+                <form action="#">
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" required></textarea>
+                    </div>
+                    <button type="submit">Send</button>
+                </form>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="container">
+            <div class="footer-links">
+                <a href="#home">Home</a>
+                <a href="#products">Products</a>
+                <a href="#about">About</a>
+                <a href="#contact">Contact</a>
+            </div>
+            <p>&copy; 2024 MyShop. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+
+</html>
